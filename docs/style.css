@@ -1,0 +1,673 @@
+/* General Styles */
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  font-family: 'Spectral', serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /*background-color: hsl(120, 75%, 95%);
+  color:#f2f2f2; #D8D8D8*/
+  background-color:hsl(48, 50%, 88%);
+  animation: fadeIn 0.5s ease-in;
+}
+
+#searchForm {
+    width: 1000px; /* Set the desired width */
+    margin: 3; /* Center the form horizontally */
+  }
+
+/* Header Styles */
+header {
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(to right, #047329, #03a74a);
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+  animation: slideDown 0.5s ease-in-out;
+  animation-delay: 0.1s; /* Delay animation for smoother effect */
+}
+
+header img {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background-color: #047329;
+  animation: rotate 1.5s linear 1 forwards;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in;
+  animation-delay: 0.2s; /* Delay animation for smoother effect */
+      position: relative;
+      display: inline-block;
+}
+
+h2 {
+  font-family: 'Titillium Web', sans-serif;
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  display: block;
+  height: 200;
+  font-size: 60px;
+  margin-bottom: 60px;
+  letter-spacing: 0.5px;
+  word-spacing: 4px;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #036d26;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in;
+  
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  position: relative;
+}
+
+nav ul li a:hover {
+  background-color: #049a37;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+  animation: slideUp 0.5s ease-in-out;
+}
+
+/* Tabs Styles */
+.tab-content {
+  display: none;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #036d26;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  animation: slideUp 0.5s ease-in-out;
+}
+
+/* Restaurant Search Styles */
+#searchForm {
+  margin-bottom: 20px;
+  animation: slideUp 0.5s ease-in-out;
+}
+
+#searchResults {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+#searchResults li {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+#searchResults li:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.restaurant-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+.restaurant-info {
+  margin-bottom: 10px;
+}
+
+.restaurant-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  animation: bounceIn 0.5s ease-in-out;
+}
+
+.rating-stars {
+  color: #ffc107;
+  margin-right: 5px;
+}
+
+.restaurant-description {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.request-button {
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: scaleIn 0.5s ease-in-out;
+}
+
+.loginbtn {
+  background-color: #036d26;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  animation: scaleIn 0.5s ease-in-out;
+}
+
+.loginbtn:hover {
+  opacity: 0.8;
+}
+
+ input[type=password] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  /*text-align: center;*/
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  animation: scaleIn 0.5s ease-in-out;
+}
+
+input[type=text][name=username] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  
+  animation: scaleIn 0.5s ease-in-out;
+}
+
+input[type=text][name=restaurantName] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  
+  animation: scaleIn 0.5s ease-in-out;
+}
+#about {
+  background-image: url("vintage-old-rustic-cutlery-dark.jpg");
+  background-size: contain;
+
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-heading {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+input[type=text][name=usernamereg] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  
+  animation: scaleIn 0.5s ease-in-out;
+}
+
+
+
+.center {
+  text-align: center;
+}
+
+/* Additional Enhancements */
+
+/* Navigation Link Animation */
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #049a37;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+nav ul li a:hover:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* Keyframe Animations */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* CSS Styling for Request Food Functionality */
+.request-button {
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.request-button:hover {
+  background-color: #45a049; /* Darker green background on hover */
+}
+
+.request-details {
+  margin-top: 20px;
+}
+
+.request-details label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.request-details input[type="text"],
+.request-details input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.request-details input[type="submit"] {
+  
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.request-details input[type="submit"]:hover {
+  background-color: #45a049; /* Darker green background on hover */
+}
+
+/* Food Requests Section Styles */
+h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+ul#requestsList {
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.5s ease-in-out;
+  list-style: none;
+  margin: 0;
+}
+
+.request-item {
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.request-item:last-child {
+  margin-bottom: 0;
+}
+
+.food-name {
+  font-weight: bold;
+  margin-right: 10px;
+  flex-basis: 30%;
+  color: #555;
+}
+
+.request-details {
+  flex-grow: 1;
+}
+
+.request-status {
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.request-date {
+  color: #888888;
+  font-size: 12px;
+}
+
+.request-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.request-item:hover .food-name {
+  color: #4CAF50;
+  transition: color 0.3s ease;
+}
+
+.request-item:hover .request-status {
+  color: #888888;
+  transition: color 0.3s ease;
+}
+
+.request-item:hover .request-date {
+  color: #4CAF50;
+  transition: color 0.3s ease;
+}
+
+.request-details p {
+  margin: 5px 0;
+}
+
+.request-details span {
+  font-weight: bold;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+}
+
+.container2 {
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+}
+
+input[type=text], input[type=email] {
+  width: 95%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+.dashboard {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+.welcome {
+  font-size:70px;
+}
+
+.intro {
+  font-size:40px;
+}
+
+.white {
+  color:white;
+}
